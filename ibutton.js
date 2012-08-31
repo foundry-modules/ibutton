@@ -1,3 +1,4 @@
+var jQuery 	= $;
 /*!
  * iButton jQuery Plug-in
  *
