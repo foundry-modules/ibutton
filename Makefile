@@ -1,11 +1,7 @@
+all: modularize minify
+
 include ../../build/modules.mk
 
 MODULE = ibutton
-FILENAME = ${MODULE}.js
-SOURCE =  ${MODULE}.js
-PRODUCTION = ${PRODUCTION_DIR}/${FILENAME}
-DEVELOPMENT = ${DEVELOPMENT_DIR}/${FILENAME}
-
-all:
-	${MODULARIZE} -n "${MODULE}" ${SOURCE} > ${DEVELOPMENT}
-	${UGLIFYJS} ${DEVELOPMENT} > ${PRODUCTION}
+SOURCE_DIR = .
+FILENAME_PREFIX = 
